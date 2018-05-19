@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
 h1  {
-    color: #ffcc00;
+    color: #aaa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
