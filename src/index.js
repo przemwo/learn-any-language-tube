@@ -1,4 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 import './styles.css';
+
+const IFrame = () => {
+    return(
+        <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="640" height="390" src="https://www.youtube.com/embed/eIho2S0ZahI?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8080&amp;widgetid=1"></iframe>
+    );
+};
+
+ReactDOM.render(
+    <div>
+        <IFrame />
+    </div>,
+    document.getElementById('app')
+);
 
 const tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -19,9 +35,6 @@ let timeOutId;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '390',
-        width: '640',
-        videoId: 'eIho2S0ZahI',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -29,6 +42,10 @@ function onYouTubeIframeAPIReady() {
     });
 }
 window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+window.onYouTubePlayerAPIReady = onYouTubePlayerAPIReady;
+
+function onYouTubePlayerAPIReady() {}
+
 
 function onPlayerReady(event) {}
 
