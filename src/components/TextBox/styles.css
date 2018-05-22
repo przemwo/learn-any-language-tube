@@ -1,0 +1,13 @@
+.container {
+    background-color: #fff;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.container:hover span {
+    background-color: #ffffcc;
+}
+
+.container.isActive span {
+    background-color: #ffcc00;
+}
