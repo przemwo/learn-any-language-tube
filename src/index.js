@@ -12,7 +12,7 @@ class YouTubePlayer extends React.Component {
         super();
         this.state = {
             video,
-            playingVideoItemId: null,
+            playingVideoItemId: undefined,
             lastPlayedVideoItemId: 0,
             done: false
         };
@@ -76,8 +76,28 @@ class YouTubePlayer extends React.Component {
             event.stopPropagation();
             const keyName = event.key;
             if (keyName === 'p') {
-                // this.playVideo();
                 this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
+            } else if (keyName === '[') {
+                const { lastPlayedVideoItemId } = this.state;
+                if(lastPlayedVideoItemId > 0) {
+                    this.setState((prevState) => ({
+                        lastPlayedVideoItemId: prevState.lastPlayedVideoItemId - 1
+                    }),
+                    () => {
+                        this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
+                    });
+                }
+            } else if (keyName === ']') {
+                const { lastPlayedVideoItemId, video } = this.state;
+                const lastItemId = video.length;
+                if(lastPlayedVideoItemId < lastItemId) {
+                    this.setState((prevState) => ({
+                        lastPlayedVideoItemId: prevState.lastPlayedVideoItemId + 1
+                    }),
+                    () => {
+                        this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
+                    });
+                }
             }
         });
         const editorItem = {
