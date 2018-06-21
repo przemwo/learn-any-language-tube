@@ -7,11 +7,20 @@ import { video } from './data';
 
 import * as styles from './styles.css';
 
+const changeLastPlayedVideoItemIdBy = (change) => (prevState) => ({
+    lastPlayedVideoItemId: prevState.lastPlayedVideoItemId + change
+});
+
+const editorItem = {
+    startAt: 0,
+    stopAt: 0
+};
+
 class YouTubePlayer extends React.Component {
     constructor() {
         super();
         this.state = {
-            video,
+            video: [...video, editorItem],
             playingVideoItemId: undefined,
             lastPlayedVideoItemId: 0,
             done: false
@@ -68,75 +77,74 @@ class YouTubePlayer extends React.Component {
         });
         this.setState({ video: newVideo });
     };
+    handleOnKeyUp = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const keyName = event.key;
+        if (keyName === 'p') {
+            this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
+        } else if (keyName === '[') {
+            const { lastPlayedVideoItemId } = this.state;
+            if (lastPlayedVideoItemId > 0) {
+                this.setState(
+                    changeLastPlayedVideoItemIdBy(-1),
+                    () => {
+                        this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
+                    }
+                );
+            }
+        } else if (keyName === ']') {
+            const { lastPlayedVideoItemId, video } = this.state;
+            const lastItemId = video.length;
+            if (lastPlayedVideoItemId < lastItemId) {
+                this.setState(
+                    changeLastPlayedVideoItemIdBy(1),
+                    () => {
+                        this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
+                    }
+                );
+            }
+        }
+    }
     componentDidMount() {
         window.onYouTubeIframeAPIReady = this.onYouTubeIframeAPIReady;
         // Keybaord events
-        document.addEventListener('keyup', (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-            const keyName = event.key;
-            if (keyName === 'p') {
-                this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
-            } else if (keyName === '[') {
-                const { lastPlayedVideoItemId } = this.state;
-                if(lastPlayedVideoItemId > 0) {
-                    this.setState((prevState) => ({
-                        lastPlayedVideoItemId: prevState.lastPlayedVideoItemId - 1
-                    }),
-                    () => {
-                        this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
-                    });
-                }
-            } else if (keyName === ']') {
-                const { lastPlayedVideoItemId, video } = this.state;
-                const lastItemId = video.length;
-                if(lastPlayedVideoItemId < lastItemId) {
-                    this.setState((prevState) => ({
-                        lastPlayedVideoItemId: prevState.lastPlayedVideoItemId + 1
-                    }),
-                    () => {
-                        this.handleOnClickPlay(this.state.lastPlayedVideoItemId)(event);
-                    });
-                }
-            }
-        });
-        const editorItem = {
-            startAt: 0,
-            stopAt: 0
-        };
-        this.setState({
-            video: [...video, editorItem]
-        })
+        document.addEventListener('keyup', this.handleOnKeyUp);
     }
     render() {
-        const { video, playingVideoItemId } = this.state;
+        const { video, playingVideoItemId, lastPlayedVideoItemId } = this.state;
         const lastItemIndex = video.length - 1;
+        const lastItem = video.slice(-1);
+        const items = video.slice(0, -1);
         return(
             <div className={styles.container}>
-                <h1>Learn any language Tube</h1>
-                <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="640" height="390" src="https://www.youtube.com/embed/1uDsY9i2EbI?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8080&amp;widgetid=1"></iframe>
-                <Editor
-                    {...video[lastItemIndex]}
-                    handleOnInput={this.handleOnInput(lastItemIndex)}
-                    handleOnClickPlay={this.handleOnClickPlay(lastItemIndex)}
-                />
-                {video.map(({ source }, index) => (
-                    <TextBox
-                        key={index}
-                        text={source}
-                        isActiveItem={playingVideoItemId === index}
-                        onClick={this.handleOnClickPlay(index)}
+                <div>
+                    <h1>Learn any language Tube</h1>
+                    <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="320" height="180" src="https://www.youtube.com/embed/1uDsY9i2EbI?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8080&amp;widgetid=1"></iframe>
+                    <Editor
+                        {...lastItem}
+                        handleOnInput={this.handleOnInput(lastItemIndex)}
+                        handleOnClickPlay={this.handleOnClickPlay(lastItemIndex)}
                     />
-                ))}
+                </div>
+                <div className={styles['text-boxes-containenr']}>
+                    {items.map(({ source }, index) => (
+                        <TextBox
+                            key={index}
+                            text={source}
+                            isActiveItem={playingVideoItemId === index}
+                            isCurrentItem={lastPlayedVideoItemId === index}
+                            onClick={this.handleOnClickPlay(index)}
+                        />
+                    ))}
+                </div>
             </div>
         );
     }
 };
 
 ReactDOM.render(
-    <div>
-        <YouTubePlayer />
-    </div>,
+    <YouTubePlayer />,
     document.getElementById('app')
 );
 

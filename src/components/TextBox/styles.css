@@ -1,10 +1,15 @@
 .container {
     background-color: #fff;
     padding: 1em;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
-.container:hover span {
+.container:hover {
+    background-color: #ffffee;
+}
+
+.container.isCurrentItem {
     background-color: #ffffcc;
 }
 
