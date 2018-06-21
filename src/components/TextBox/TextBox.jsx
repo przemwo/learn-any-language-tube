@@ -8,7 +8,6 @@ class TextBox extends React.Component {
     currentDOMElement;
     componentDidUpdate(prevProps) {
         if(!prevProps.isCurrentItem && this.props.isCurrentItem) {
-            console.log('jest current!', this.props.text);
             this.currentDOMElement.scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest'
