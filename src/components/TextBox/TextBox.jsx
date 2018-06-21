@@ -5,6 +5,16 @@ import classNames from 'classnames';
 import styles from './styles.css';
 
 class TextBox extends React.Component {
+    currentDOMElement;
+    componentDidUpdate(prevProps) {
+        if(!prevProps.isCurrentItem && this.props.isCurrentItem) {
+            console.log('jest current!', this.props.text);
+            this.currentDOMElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }
+    }
     render() {
         const { text, isActiveItem, isCurrentItem, onClick } = this.props;
         const container = classNames({
@@ -14,6 +24,7 @@ class TextBox extends React.Component {
         });
         return(
             <div
+                ref={(element) => {this.currentDOMElement = element}}
                 className={container}
                 onClick={onClick}
             >
