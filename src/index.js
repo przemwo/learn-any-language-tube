@@ -25,7 +25,8 @@ class YouTubePlayer extends React.Component {
             video: [...video, editorItem],
             playingVideoItemId: undefined,
             lastPlayedVideoItemId: 0,
-            done: false
+            done: false,
+            currentPlayingTime: null,
         };
     }
     onYouTubeIframeAPIReady = () => {
@@ -49,13 +50,13 @@ class YouTubePlayer extends React.Component {
             this.setState({ done: true });
         }
         if(event.data === YT.PlayerState.PLAYING && !this.intervalId) {
-            console.log('PLAY');
             this.intervalId = setInterval(() => {
-                console.log(this.player.getCurrentTime().toFixed(2));
+                this.setState({
+                    currentPlayingTime: this.player.getCurrentTime().toFixed(2),
+                });
             }, 100);
         }
         if(event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.END) {
-            console.log('STOP ', event.data);
             clearInterval(this.intervalId);
             this.intervalId = null;
         }
@@ -76,7 +77,6 @@ class YouTubePlayer extends React.Component {
         clearTimeout(this.timeOutId);
         this.player.seekTo(this.state.video[this.state.playingVideoItemId].startAt);
         this.player.playVideo();
-        console.log("TIME: ", this.player.getCurrentTime());
     };
     pauseVideo = () => {
         this.player.pauseVideo();
@@ -138,6 +138,7 @@ class YouTubePlayer extends React.Component {
                 <div>
                     <h1>Learn any language Tube</h1>
                     <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="640" height="360" src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8080&amp;widgetid=1`}></iframe>
+                    <h3>{this.state.currentPlayingTime}</h3>
                     <Editor
                         {...lastItem}
                         handleOnInput={this.handleOnInput(lastItemIndex)}
