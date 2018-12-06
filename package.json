@@ -25,6 +25,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
     "css-loader": "^0.28.11",
     "style-loader": "^0.21.0",
     "webpack": "^4.8.3",
