@@ -8,7 +8,11 @@ function dataLoaded(err, data) {
     const $ = cheerio.load(data);
     $('.cue').each((i, element) => {
         const startAt = $(element).attr('start-offset') / 1000;
-        const text = $(element).text().trim();
+        const text = $(element)
+                        .text()
+                        .replace(/\s/g, " ")
+                        .replace(/"/g, '\\"')
+                        .trim();
         output += `
         {
             startAt: ${startAt},

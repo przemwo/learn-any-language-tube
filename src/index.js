@@ -7,7 +7,7 @@ import { video } from './data';
 
 import * as styles from './styles.css';
 
-const videoId = "n3kNlFMXslo";
+const videoId = "te3Zm4bHBVs";
 
 const changeLastPlayedVideoItemIdBy = (change) => (prevState) => ({
     lastPlayedVideoItemId: prevState.lastPlayedVideoItemId + change

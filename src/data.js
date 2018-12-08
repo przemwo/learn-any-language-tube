@@ -1,1374 +1,2205 @@
 const video =
+
 [
+        
+    {
+        startAt: 0.12,
+        source: "SURMA: Right.",
+    },
+    
+    {
+        startAt: 0.33,
+        source: "I don't know that this works.",
+    },
+    
+    {
+        startAt: 1.27,
+        source: "Why is it [INAUDIBLE] all Jake?",
+    },
+    
+    {
+        startAt: 2.561,
+        source: "What did you do?",
+    },
+    
+    {
+        startAt: 3.385,
+        source: "[MUSIC PLAYING]",
+    },
+    
+    {
+        startAt: 10.04,
+        source: "JAKE: So we did an episode where we were looking",
+    },
+    
+    {
+        startAt: 12.04,
+        source: "at future JavaScript stuff.",
+    },
+    
+    {
+        startAt: 14.35,
+        source: "SURMA: We did.",
+    },
+    
+    {
+        startAt: 15.07,
+        source: "People liked that.",
+    },
+    
+    {
+        startAt: 15.91,
+        source: "JAKE: Yes.",
+    },
+    
+    {
+        startAt: 17.08,
+        source: "So what I thought we'd do is look at new stuff that's",
+    },
+    
+    {
+        startAt: 21.76,
+        source: "already landed--",
+    },
+    
+    {
+        startAt: 22.84,
+        source: "SURMA: Oh, I thought you were going to say,",
+    },
+    
+    {
+        startAt: 23.66,
+        source: "let's look at old stuff.",
+    },
+    
+    {
+        startAt: 24.44,
+        source: "I was like, well, that doesn't make--",
+    },
+    
+    {
+        startAt: 25.22,
+        source: "JAKE: Well, I think new stuff that's already landed",
+    },
+    
+    {
+        startAt: 27.345,
+        source: "is probably how you would define old stuff, really.",
+    },
+    
+    {
+        startAt: 29.97,
+        source: "I feel like I'm doing a bad job of introducing",
+    },
+    
+    {
+        startAt: 32.554,
+        source: "what this actually is.",
+    },
+    
+    {
+        startAt: 33.47,
+        source: "So I'm just going to show you.",
+    },
+    
+    {
+        startAt: 34.72,
+        source: "SURMA: Let's look at ES3.",
+    },
+    
+    {
+        startAt: 35.89,
+        source: "JAKE: Well, yes.",
+    },
+    
+    {
+        startAt: 37.93,
+        source: "SURMA: Oh.",
+    },
+    
+    {
+        startAt: 38.65,
+        source: "I was trying to make a joke, but--",
+    },
+    
+    {
+        startAt: 40.72,
+        source: "JAKE: Don't ever do that again, mate.",
+    },
+    
+    {
+        startAt: 43.62,
+        source: "Just tell me what is going on here.",
+    },
+    
+    {
+        startAt: 48.82,
+        source: "SURMA: This is like the throwback",
+    },
+    
+    {
+        startAt: 50.2,
+        source: "to object oriented programming in JavaScript before we",
+    },
+    
+    {
+        startAt: 52.77,
+        source: "had classes, isn't it?",
+    },
+    
+    {
+        startAt: 53.77,
+        source: "JAKE: Exactly.",
+    },
+    
+    {
+        startAt: 54.53,
+        source: "Yeah.",
+    },
+    
+    {
+        startAt: 55.03,
+        source: "SURMA: Where you define a function,",
+    },
+    
+    {
+        startAt: 56.93,
+        source: "and suddenly you can add properties",
+    },
+    
+    {
+        startAt: 59.374,
+        source: "on the prototype of that function.",
+    },
+    
+    {
+        startAt: 60.79,
+        source: "It sounds really weird, but that's how you did it.",
+    },
+    
+    {
+        startAt: 63.257,
+        source: "JAKE: So what's happening?",
+    },
+    
+    {
+        startAt: 64.34,
+        source: "Talk to me.",
+    },
+    
+    {
+        startAt: 64.839,
+        source: "SURMA: So you define a function Car.",
+    },
+    
+    {
+        startAt: 66.67,
+        source: "I'm not going to talk about what's",
+    },
+    
+    {
+        startAt: 67.72,
+        source: "inside the function for now.",
+    },
+    
+    {
+        startAt: 68.886,
+        source: "But then you can add things in the prototype",
+    },
+    
+    {
+        startAt: 71.61,
+        source: "of this function called Car.",
+    },
     
     {
-        startAt: 12.049,
-        source: "When people find out I write about time management they assume two things. One is that I'm always on time.",
+        startAt: 73.57,
+        source: "And I think that prototype is used",
     },
     
     {
-        startAt: 22.38,
-        source: "And I'm not. I have four small children and I would like to blame them for my occasional tardiness but sometimes it's just not their fault.",
+        startAt: 76.9,
+        source: "when you use the function with the new keyword.",
     },
     
     {
-        startAt: 31.47,
-        source: "I was once late to my own speech on time management.",
+        startAt: 80.11,
+        source: "So if I say new Car, then the things",
     },
     
     {
-        startAt: 35.329,
-        source: "We all had to just take a moment together and savor that irony.",
+        startAt: 82.89,
+        source: "in the prototype in that thing I can use also,",
     },
     
     {
-        startAt: 40.5,
-        source: "The second thing they assume is that I have lots of tips and tricks for saving bits of time here and there.",
+        startAt: 85.292,
+        source: "on the instance of Car.",
     },
     
     {
-        startAt: 45.6,
-        source: "Sometimes I'll hear from magazines that are doing a story along these lines generally on how to help their readers find an extra hour in the day",
+        startAt: 86.25,
+        source: "That was a really bad explanation.",
     },
     
     {
-        startAt: 52.70,
-        source: "And the idea is that we will shave bits of time off every day activities add it up and we'll have time for the good stuff",
+        startAt: 88,
+        source: "JAKE: It was.",
     },
     
     {
-        startAt: 58.50,
-        source: "And I question the entire",
+        startAt: 88.87,
+        source: "Yes.",
     },
     
     {
-        startAt: 61.02,
-        source: "premise of this piece but I'm always",
+        startAt: 90.56,
+        source: "SURMA: I always found it confusing.",
     },
     
     {
-        startAt: 63.449,
-        source: "interested in hearing what they've come",
+        startAt: 92.73,
+        source: "It's-- what is it called-- in prototypical inheritance?",
     },
     
     {
-        startAt: 64.709,
-        source: "up with before they call me so some of",
+        startAt: 97.401,
+        source: "JAKE: Yes.",
     },
     
     {
-        startAt: 66.119,
-        source: "my favorites doing errands in a way",
+        startAt: 97.9,
+        source: "SURMA: Something like that?",
     },
     
     {
-        startAt: 68.07,
-        source: "where you only have to make right-hand",
+        startAt: 98.58,
+        source: "JAKE: Prototypical.",
     },
     
     {
-        startAt: 69.27,
-        source: "turns being extremely judicious in",
+        startAt: 99.371,
+        source: "Prototypical.",
     },
     
     {
-        startAt: 73.14,
-        source: "microwave usage so it says three to",
+        startAt: 100.13,
+        source: "But what about--",
     },
     
     {
-        startAt: 74.67,
-        source: "three and a half minutes on the package",
+        startAt: 102.58,
+        source: "SURMA: You're just already doing weird stuff.",
     },
     
     {
-        startAt: 75.78,
-        source: "we are totally getting in on the bottom",
+        startAt: 105.22,
+        source: "JAKE: This.",
     },
     
     {
-        startAt: 76.95,
-        source: "side of that and my personal favorite",
+        startAt: 105.95,
+        source: "So I guess we should explain that you",
     },
     
     {
-        startAt: 78.869,
-        source: "which makes sense on some level is to",
+        startAt: 108.804,
+        source: "were relatively recent to the web,",
     },
     
     {
-        startAt: 80.97,
-        source: "DVR your favorite shows so you can",
+        startAt: 110.22,
+        source: "but you have ramped up fast.",
     },
     
     {
-        startAt: 82.95,
-        source: "fast-forward through the commercials and",
+        startAt: 111.787,
+        source: "SURMA: Yeah, I never did--",
     },
     
     {
-        startAt: 84.39,
-        source: "that way you save about eight minutes",
+        startAt: 112.87,
+        source: "JAKE: You would have never have done this.",
     },
     
     {
-        startAt: 85.799,
-        source: "every half-hour",
+        startAt: 114.22,
+        source: "SURMA: I've done it at university.",
     },
     
     {
-        startAt: 86.909,
-        source: "so in the course of two hours of",
+        startAt: 115.78,
+        source: "Not that specific.",
     },
     
     {
-        startAt: 88.53,
-        source: "watching TV you find 32 minutes to",
+        startAt: 117.19,
+        source: "I just used [? Car.prototype ?] [? dot ?] first function equals",
     },
     
     {
-        startAt: 90.36,
-        source: "exercise which is true you know another",
+        startAt: 120.784,
+        source: "and then the function.",
     },
     
     {
-        startAt: 95.04,
-        source: "way to find 32 minutes to exercise don't",
+        startAt: 121.7,
+        source: "JAKE: But this Car inherits from Vehicle.",
     },
     
     {
-        startAt: 97.829,
-        source: "watch two hours of TV a day right",
+        startAt: 125.63,
+        source: "And this is how we used to do inheritance.",
     },
     
     {
-        startAt: 100.4,
-        source: "anyway the ideas will save bits of time",
+        startAt: 129.59,
+        source: "SURMA: But that's disgusting.",
     },
     
     {
-        startAt: 103.14,
-        source: "here and there are added up we will",
+        startAt: 131.08,
+        source: "JAKE: Yes.",
     },
     
     {
-        startAt: 104.46,
-        source: "finally get to everything we want to do",
+        startAt: 131.65,
+        source: "Isn't it?",
     },
     
     {
-        startAt: 106.049,
-        source: "but after studying how successful people",
+        startAt: 132.31,
+        source: "Isn't it horrible?",
     },
     
     {
-        startAt: 108.36,
-        source: "spend their time and looking at their",
+        startAt: 133.061,
+        source: "SURMA: Wow.",
     },
     
     {
-        startAt: 110.46,
-        source: "schedules hour by hour I think this idea",
+        startAt: 133.56,
+        source: "JAKE: Because I mean--",
     },
     
     {
-        startAt: 113.159,
-        source: "has it completely backward we don't",
+        startAt: 134.5,
+        source: "SURMA: That's why people use frameworks, right?",
     },
     
     {
-        startAt: 116.64,
-        source: "build the lives we want by saving time",
+        startAt: 136.458,
+        source: "Or little libraries that would give you that.",
     },
     
     {
-        startAt: 119.659,
-        source: "we build the lives we want and then time",
+        startAt: 138.637,
+        source: "JAKE: Exactly.",
     },
     
     {
-        startAt: 123.35,
-        source: "saves itself here's what I mean I",
+        startAt: 139.22,
+        source: "And so because you want Car.prototype",
     },
     
     {
-        startAt: 127.979,
-        source: "recently did a time diary project",
+        startAt: 142.54,
+        source: "to be an instance of Vehicle.",
     },
     
     {
-        startAt: 129.81,
-        source: "looking at a thousand and one days in",
+        startAt: 144.85,
+        source: "But Vehicle has-- you need to call the function with stuff.",
     },
     
     {
-        startAt: 131.7,
-        source: "the lives of extremely busy",
+        startAt: 149.35,
+        source: "It has options and things.",
     },
     
     {
-        startAt: 133.47,
-        source: "women they had demanding jobs sometimes",
+        startAt: 151.24,
+        source: "So what you needed to do is create a new constructor,",
     },
     
     {
-        startAt: 135.78,
-        source: "their own businesses kids to care for",
+        startAt: 153.76,
+        source: "copy the prototype over, or reference the prototype over,",
     },
     
     {
-        startAt: 137.85,
-        source: "maybe parents to care for community",
+        startAt: 156.34,
+        source: "create a new one of those, and that meant your Car now",
     },
     
     {
-        startAt: 139.56,
-        source: "commitments busy busy people I had to",
+        startAt: 159.19,
+        source: "inherits from Vehicle.",
     },
     
     {
-        startAt: 143.1,
-        source: "keep track of their time for a week so I",
+        startAt: 160.6,
+        source: "And then here, this is where you were doing the [INAUDIBLE]..",
     },
     
     {
-        startAt: 144.75,
-        source: "could add up how much they worked and",
+        startAt: 164.2,
+        source: "My point is we've got classes.",
     },
     
     {
-        startAt: 146.22,
-        source: "slept and I interviewed them about their",
+        startAt: 166.92,
+        source: "This is what we have now.",
     },
     
     {
-        startAt: 148.23,
-        source: "strategies for my book one of the women",
+        startAt: 168.319,
+        source: "So this is what I want to talk about,",
     },
     
     {
-        startAt: 150.63,
-        source: "whose time logs I studied she goes out",
+        startAt: 169.86,
+        source: "is just some of the things that we've got now--",
     },
     
     {
-        startAt: 152.22,
-        source: "for a Wednesday night for something she",
+        startAt: 171.932,
+        source: "SURMA: And we're taking for granted almost, isn't it?",
     },
     
     {
-        startAt: 154.14,
-        source: "comes home to find that her water heater",
+        startAt: 174.14,
+        source: "JAKE: And we almost take for granted.",
     },
     
     {
-        startAt: 155.85,
-        source: "has broken and there is now water all",
+        startAt: 175.92,
+        source: "SURMA: The old version, the prototypical inheritance,",
     },
     
     {
-        startAt: 158.1,
-        source: "over her basement if you've ever had",
+        startAt: 177.36,
+        source: "always reminds me of Lua, where you only have tables",
     },
     
     {
-        startAt: 160.83,
-        source: "anything like this happened to you you",
+        startAt: 179.526,
+        source: "and you have tables within tables",
     },
     
     {
-        startAt: 162.21,
-        source: "know it is a hugely damaging frightening",
+        startAt: 180.99,
+        source: "if you want to inherit-- it just gets super weird.",
     },
     
     {
-        startAt: 164.1,
-        source: "sopping mess so she's dealing with the",
+        startAt: 183.114,
+        source: "It feels very similar.",
     },
     
     {
-        startAt: 166.62,
-        source: "immediate aftermath at night next day",
+        startAt: 184.03,
+        source: "And this is just--",
     },
     
     {
-        startAt: 168.75,
-        source: "she's got plumbers coming in day after",
+        startAt: 185.57,
+        source: "ha, feels better.",
     },
     
     {
-        startAt: 170.34,
-        source: "that professional cleaning crew dealing",
+        startAt: 186.685,
+        source: "JAKE: Never done Lua.",
     },
     
     {
-        startAt: 171.78,
-        source: "with the ruined carpet all this is being",
+        startAt: 187.56,
+        source: "I'll take your word for it.",
     },
     
     {
-        startAt: 173.79,
-        source: "recorded on her time log winds up taking",
+        startAt: 190.07,
+        source: "What's happening here?",
     },
     
     {
-        startAt: 176.28,
-        source: "seven hours of her week seven hours",
+        startAt: 191.68,
+        source: "SURMA: You are defining a function called spin.",
     },
     
     {
-        startAt: 180.38,
-        source: "that's like finding an extra hour in the",
+        startAt: 193.717,
+        source: "JAKE: Correct.",
     },
     
     {
-        startAt: 183.42,
-        source: "day but I'm sure if you had asked her at",
+        startAt: 194.3,
+        source: "SURMA: Let's take a closer look.",
     },
     
     {
-        startAt: 186.3,
-        source: "the start of the week could you find",
+        startAt: 195.633,
+        source: "So the options-- oh, OK.",
     },
     
     {
-        startAt: 187.98,
-        source: "seven hours to train for a triathlon",
+        startAt: 198.58,
+        source: "So this is basically sanitization",
     },
     
     {
-        startAt: 191.09,
-        source: "could you find seven hours to mentor",
+        startAt: 200.63,
+        source: "of the options object.",
     },
     
     {
-        startAt: 194.67,
-        source: "seven worthy people I'm sure she would",
+        startAt: 202.17,
+        source: "JAKE: Yeah.",
     },
     
     {
-        startAt: 196.47,
-        source: "have said what most of us would have",
+        startAt: 203,
+        source: "SURMA: Which, you know, even there",
     },
     
     {
-        startAt: 197.64,
-        source: "said which is no can't you see how busy",
+        startAt: 204.53,
+        source: "is also [INAUDIBLE],, where you just",
     },
     
     {
-        startAt: 201.33,
-        source: "I am yet when she had to find seven",
+        startAt: 206.03,
+        source: "define a syntax, what the options object would look like.",
     },
     
     {
-        startAt: 204.9,
-        source: "hours because there is water all over",
+        startAt: 208.52,
+        source: "Because otherwise, you would have to write this,",
     },
     
     {
-        startAt: 206.79,
-        source: "her basement",
+        startAt: 210.33,
+        source: "and this is just like-- it took me a while to actually",
     },
     
     {
-        startAt: 207.84,
-        source: "she found seven hours and what this",
+        startAt: 212.15,
+        source: "understand what you were doing.",
     },
     
     {
-        startAt: 211.44,
-        source: "shows us is that time is highly elastic",
+        startAt: 213.27,
+        source: "And now I didn't read every detail,",
     },
     
     {
-        startAt: 214.73,
-        source: "we cannot make more time but time will",
+        startAt: 214.55,
+        source: "because I recognized the pattern, because I've",
     },
     
     {
-        startAt: 218.459,
-        source: "stretch to accommodate what we choose to",
+        startAt: 216.5,
+        source: "written that before.",
     },
     
     {
-        startAt: 220.95,
-        source: "put into it and so the key to time",
+        startAt: 217.334,
+        source: "JAKE: Yes.",
     },
     
     {
-        startAt: 224.1,
-        source: "management is treating our priorities as",
+        startAt: 217.833,
+        source: "SURMA: If you don't know the pattern,",
     },
     
     {
-        startAt: 227.22,
-        source: "the equivalent of that broken water",
+        startAt: 219.5,
+        source: "this would be a lot of reading time spent until you know,",
     },
     
     {
-        startAt: 230.34,
-        source: "heater and to get at this I like to use",
+        startAt: 222.17,
+        source: "oh, you were just checking that certain properties are present,",
     },
     
     {
-        startAt: 233.549,
-        source: "some language from one of the busiest",
+        startAt: 226.441,
+        source: "and if they're not, using a default value.",
     },
     
     {
-        startAt: 234.989,
-        source: "people I ever interviewed by busy I mean",
+        startAt: 228.19,
+        source: "JAKE: Yes.",
     },
     
     {
-        startAt: 237.18,
-        source: "she was running a small business of 12",
+        startAt: 228.689,
+        source: "And this got a lot easier with object.assign,",
     },
     
     {
-        startAt: 238.769,
-        source: "people on the payroll she had six",
+        startAt: 231.82,
+        source: "which was essentially what the library--",
     },
     
     {
-        startAt: 240.69,
-        source: "children in her spare time I was getting",
+        startAt: 233.89,
+        source: "we all had to be doing something like object.assign,",
     },
     
     {
-        startAt: 243.12,
-        source: "in touch with her to set up an interview",
+        startAt: 237.46,
+        source: "and that's what we'd use here, but nowadays--",
     },
     
     {
-        startAt: 244.83,
-        source: "on how she had it all that phrase I",
+        startAt: 240.68,
+        source: "SURMA: Destructuring with the full values.",
     },
     
     {
-        startAt: 247.32,
-        source: "remember it was a Thursday morning and",
+        startAt: 243.58,
+        source: "JAKE: Yes.",
     },
     
     {
-        startAt: 249.239,
-        source: "she was not available to speak with me",
+        startAt: 244.24,
+        source: "So what we see here, we're destructuring.",
     },
     
     {
-        startAt: 250.83,
-        source: "of course right but the reason she was",
+        startAt: 246.202,
+        source: "We're giving it the default values,",
     },
     
     {
-        startAt: 253.739,
-        source: "unavailable to speak with me is that she",
+        startAt: 247.66,
+        source: "and then a default value for the option object there,",
     },
     
     {
-        startAt: 255.51,
-        source: "was out for a hike because it was a",
+        startAt: 249.868,
+        source: "so it's entirely optional.",
     },
     
     {
-        startAt: 257.668,
-        source: "beautiful spring morning and she wanted",
+        startAt: 251.03,
+        source: "But I brought this example for a reason.",
     },
     
     {
-        startAt: 259.529,
-        source: "to go for a hike so of course this makes",
+        startAt: 253.929,
+        source: "SURMA: Because I don't like it.",
     },
     
     {
-        startAt: 261.899,
-        source: "me even more intrigued and when I",
+        startAt: 255.22,
+        source: "JAKE: Because you don't like it, do you?",
     },
     
     {
-        startAt: 263.789,
-        source: "finally do catch up with her she",
+        startAt: 256.93,
+        source: "SURMA: So I do like the structuring and default base.",
     },
     
     {
-        startAt: 265.2,
-        source: "explains it like this she says listen",
+        startAt: 258.73,
+        source: "I've gotten around to it a little bit.",
     },
     
     {
-        startAt: 266.49,
-        source: "Laura",
+        startAt: 260.313,
+        source: "I don't like it in the actual function parameter definition.",
     },
     
     {
-        startAt: 267.16,
-        source: "everything I do every minute I spend is",
+        startAt: 266.14,
+        source: "I prefer this where you destructure",
     },
     
     {
-        startAt: 270.97,
-        source: "my choice and rather than say I don't",
+        startAt: 269.35,
+        source: "in a separate place, because, otherwise, it",
     },
     
     {
-        startAt: 275.35,
-        source: "have time to do X Y or Z should say I",
+        startAt: 271.45,
+        source: "gets a little bit nested, and it looks a bit crammed.",
     },
     
     {
-        startAt: 278.47,
-        source: "don't do X Y or Z because it's not a",
+        startAt: 275.54,
+        source: "And especially if you have TypeScript,",
     },
     
     {
-        startAt: 281.67,
-        source: "priority I don't have time often means",
+        startAt: 278.83,
+        source: "it gets even weirder, because then the types just",
     },
     
     {
-        startAt: 286.33,
-        source: "it's not a priority if you think about",
+        startAt: 281.11,
+        source: "go all over the place.",
     },
     
     {
-        startAt: 289.72,
-        source: "it that's really more accurate language",
+        startAt: 282.075,
+        source: "So when I use TypeScript, I often",
     },
     
     {
-        startAt: 291.76,
-        source: "I mean I could tell you I don't have",
+        startAt: 283.45,
+        source: "have a type that's called function name with the word",
     },
     
     {
-        startAt: 293.2,
-        source: "time to dust my blinds but that's not",
+        startAt: 287.216,
+        source: "options appended to the end where",
     },
     
     {
-        startAt: 294.76,
-        source: "true if you offered to pay me a hundred",
+        startAt: 288.59,
+        source: "I define what structure the options object have.",
     },
     
     {
-        startAt: 296.38,
-        source: "thousand dollars to go dust my blinds I",
+        startAt: 291,
+        source: "And then I have the first line in my function",
     },
     
     {
-        startAt: 298.12,
-        source: "would get to it pretty quickly since",
+        startAt: 293.06,
+        source: "will then assign the default values.",
     },
     
     {
-        startAt: 300.52,
-        source: "that is not going to happen I can",
+        startAt: 295.3,
+        source: "JAKE: Yeah, and I agree.",
     },
     
     {
-        startAt: 302.14,
-        source: "acknowledge this is not a matter of",
+        startAt: 298.19,
+        source: "Yeah.",
     },
     
     {
-        startAt: 303.4,
-        source: "lacking time is that I don't want to do",
+        startAt: 298.69,
+        source: "This looks a lot neater.",
     },
     
     {
-        startAt: 305.98,
-        source: "it using this language reminds us that",
+        startAt: 300.61,
+        source: "The reason I would still do this is because a static analyzer",
     },
     
     {
-        startAt: 308.32,
-        source: "time is a choice and granted there may",
+        startAt: 305.26,
+        source: "knows that these are the properties of the option",
     },
     
     {
-        startAt: 311.8,
-        source: "be horrible consequences for making",
+        startAt: 308.02,
+        source: "object.",
     },
     
     {
-        startAt: 313.63,
-        source: "different choices I will give you that",
+        startAt: 308.74,
+        source: "In this case, it's not--",
     },
     
     {
-        startAt: 315.01,
-        source: "but we are smart people and certainly",
+        startAt: 309.91,
+        source: "SURMA: True.",
     },
     
     {
-        startAt: 317.95,
-        source: "over the long run we have the power to",
+        startAt: 310.69,
+        source: "This is probably preferable if you don't have TypeScript.",
     },
     
     {
-        startAt: 320.02,
-        source: "fill our lives with the things that",
+        startAt: 313.88,
+        source: "JAKE: Right.",
     },
     
     {
-        startAt: 322.09,
-        source: "deserve to be there so how do we do that",
+        startAt: 314.38,
+        source: "So that's that.",
     },
     
     {
-        startAt: 326.28,
-        source: "how do we treat our priorities as the",
+        startAt: 316.54,
+        source: "SURMA: What's happening here?",
     },
     
     {
-        startAt: 328.72,
-        source: "equivalent of that broken water heater",
+        startAt: 317.972,
+        source: "JAKE: If you don't know what's happening here--",
     },
     
     {
-        startAt: 330.72,
-        source: "well first we need to figure out what",
+        startAt: 319.93,
+        source: "SURMA: I need to get out.",
     },
     
     {
-        startAt: 332.86,
-        source: "they are I want to give you two",
+        startAt: 320.971,
+        source: "JAKE: We have to fire you, yeah.",
     },
     
     {
-        startAt: 334.57,
-        source: "strategies for thinking about this the",
+        startAt: 322.71,
+        source: "SURMA: You're making the DOM element with a class whatever",
     },
     
     {
-        startAt: 336.22,
-        source: "first on the professional side I'm sure",
+        startAt: 326.53,
+        source: "be 100 pixel tall.",
     },
     
     {
-        startAt: 337.96,
-        source: "many people coming up to the end of the",
+        startAt: 331.12,
+        source: "JAKE: Well saved.",
     },
     
     {
-        startAt: 339.76,
-        source: "year or giving or getting annual",
+        startAt: 332.39,
+        source: "So I spend a lot of my time designing in DevTools.",
     },
     
     {
-        startAt: 341.32,
-        source: "performance reviews you look back over",
+        startAt: 338.14,
+        source: "I'll throw some rough styles just into the editor,",
     },
     
     {
-        startAt: 343.51,
-        source: "your successes over the year your",
+        startAt: 342.792,
+        source: "and then I'll go into DevTools and that's",
     },
     
     {
-        startAt: 345.54,
-        source: "opportunities for growth and this serves",
+        startAt: 344.5,
+        source: "where I'll be shifting values around to make it look then--",
     },
     
     {
-        startAt: 348.58,
-        source: "its purpose but I find it's more",
+        startAt: 347.44,
+        source: "SURMA: Copy and paste.",
     },
     
     {
-        startAt: 350.98,
-        source: "effective to do this looking forward so",
+        startAt: 349.172,
+        source: "JAKE: It's exactly that, yeah.",
     },
     
     {
-        startAt: 353.32,
-        source: "once you pretend is the end of next year",
+        startAt: 351.43,
+        source: "In this case, editing this in DevTools",
     },
     
     {
-        startAt: 355.44,
-        source: "you're giving yourself a performance",
+        startAt: 354.31,
+        source: "is hard, because what I want--",
     },
     
     {
-        startAt: 357.97,
-        source: "review and it has been an absolutely",
+        startAt: 356.62,
+        source: "in this case, I want whatever to be the same width",
     },
     
     {
         startAt: 360.28,
-        source: "amazing year for you professionally what",
+        source: "as it is high.",
     },
     
     {
-        startAt: 364.24,
-        source: "three to five things did you do that",
+        startAt: 362.39,
+        source: "I want it to be square is how a human would say that.",
     },
     
     {
         startAt: 367.57,
-        source: "made it so amazing so you can write next",
+        source: "And it means that if I'm shifting values around",
     },
     
     {
-        startAt: 371.71,
-        source: "year's performance review now and you",
+        startAt: 370.09,
+        source: "in DevTools, I shift one, and then I",
     },
     
     {
-        startAt: 374.77,
-        source: "can do this for your personal life too",
+        startAt: 373.18,
+        source: "have to Tab twice, or whatever, and shift the other one.",
     },
     
     {
-        startAt: 376.51,
-        source: "I'm sure many of you like me come",
+        startAt: 377.41,
+        source: "And that's a pain.",
     },
     
     {
-        startAt: 378.25,
-        source: "December get cards that contain these",
+        startAt: 378.37,
+        source: "So here's one of the solutions.",
     },
     
     {
-        startAt: 380.5,
-        source: "folded up sheets of colored paper on",
+        startAt: 379.661,
+        source: "SURMA: Yes, that's the proper solution, I'd say.",
     },
     
     {
-        startAt: 383.02,
-        source: "which is written what is known as the",
+        startAt: 381.756,
+        source: "JAKE: Yeah, and it's been nice now that this is supported",
     },
     
     {
-        startAt: 385.9,
-        source: "family holiday letter bit of a wretched",
+        startAt: 384.13,
+        source: "in all modern browsers.",
     },
     
     {
-        startAt: 390.76,
-        source: "genre of literature really going on",
+        startAt: 386.194,
+        source: "I've just found this a dream, and it's--",
     },
     
     {
-        startAt: 393.01,
-        source: "about how amazing everyone in the",
+        startAt: 387.86,
+        source: "SURMA: For what it's worth, size is coming to CSS.",
     },
     
     {
-        startAt: 395.29,
-        source: "household is or even more scintillating",
+        startAt: 390.304,
+        source: "JAKE: Is that right, and it's just",
     },
     
     {
-        startAt: 397.06,
-        source: "how busy everyone in the household is",
+        startAt: 391.72,
+        source: "an alias width plus height.",
     },
     
     {
-        startAt: 399.22,
-        source: "but these letters sir",
+        startAt: 393.27,
+        source: "Oh, that's exciting.",
     },
     
     {
-        startAt: 400.87,
-        source: "purpose which is that they tell your",
+        startAt: 394.195,
+        source: "SURMA: Yeah, because we have a lot of other things.",
     },
     
     {
-        startAt: 402.28,
-        source: "friends and family what you did and your",
+        startAt: 396.32,
+        source: "For example, I think background image size.",
     },
     
     {
-        startAt: 403.78,
-        source: "personal life that matter to you over",
+        startAt: 400.15,
+        source: "Certain other size properties exist",
     },
     
     {
-        startAt: 405.19,
-        source: "the course of the year so this year's",
+        startAt: 401.95,
+        source: "where you can have one value or two values,",
     },
     
     {
-        startAt: 407.139,
-        source: "kind of done but I want you to pretend",
+        startAt: 404.336,
+        source: "and if it's only one value, it's the same for width and height.",
     },
     
     {
-        startAt: 408.669,
-        source: "it's the end of next year and it has",
+        startAt: 406.96,
+        source: "But we don't have it for the actual size of the document.",
     },
     
     {
-        startAt: 411.22,
-        source: "been an absolutely amazing year for you",
+        startAt: 409.492,
+        source: "JAKE: So it becomes a shortcut for width and height--",
     },
     
     {
-        startAt: 414.639,
-        source: "and the people you care about what 3 to",
+        startAt: 411.7,
+        source: "SURMA: Yeah, and you can also do size 100 pixel, 200 pixel,",
     },
     
     {
-        startAt: 418.09,
-        source: "5 things did you do that made it so",
+        startAt: 414.4,
+        source: "if you want it to be 100 pixels wide and--",
     },
     
     {
-        startAt: 420.78,
-        source: "amazing so you can write next year's",
+        startAt: 416.519,
+        source: "JAKE: In the same way you do for background size.",
     },
     
     {
-        startAt: 424.21,
-        source: "family holiday letter now don't send it",
+        startAt: 418.56,
+        source: "SURMA: Exactly.",
     },
     
     {
-        startAt: 429.24,
-        source: "please don't send it but you can write",
+        startAt: 418.96,
+        source: "JAKE: Oh, OK.",
     },
     
     {
-        startAt: 433.78,
-        source: "it and now between the performance",
+        startAt: 419.51,
+        source: "That's good.",
     },
     
     {
-        startAt: 435.55,
-        source: "review and the family holiday letter we",
+        startAt: 420.01,
+        source: "But in the meantime, this works.",
     },
     
     {
-        startAt: 438.28,
-        source: "have a list of six to ten goals we can",
+        startAt: 421.343,
+        source: "SURMA: For now, this works.",
     },
     
     {
-        startAt: 439.78,
-        source: "work on in the next year and now we need",
+        startAt: 423.705,
+        source: "JAKE: What's happening here?",
     },
     
     {
-        startAt: 442.03,
-        source: "to break these down into doable steps so",
+        startAt: 425.61,
+        source: "SURMA: I'm assuming that UL and LI are well-named variables,",
     },
     
     {
-        startAt: 443.95,
-        source: "maybe you want to write a family history",
+        startAt: 428.807,
+        source: "and you're not trying to throw me off.",
     },
     
     {
-        startAt: 446.139,
-        source: "well first you can read some other",
+        startAt: 430.39,
+        source: "So you have a list that you add a click handler",
     },
     
     {
-        startAt: 447.61,
-        source: "family histories get a sense for the",
+        startAt: 433.62,
+        source: "and then you get the event targets from the LI,",
     },
     
     {
-        startAt: 449.11,
-        source: "style then maybe think about the",
+        startAt: 437.67,
+        source: "and if it's not an LI, then you say, well, you bubble up.",
     },
     
     {
-        startAt: 450.91,
-        source: "questions you want to ask your relatives",
+        startAt: 441.59,
+        source: "Oh, OK.",
     },
     
     {
-        startAt: 452.38,
-        source: "set up appointments to interview them or",
+        startAt: 442.11,
+        source: "So what you're doing is you, basically,",
     },
     
     {
-        startAt: 453.94,
-        source: "maybe you want to run a 5k so you need",
+        startAt: 444.42,
+        source: "do the event delegation where you have one click handler",
     },
     
     {
-        startAt: 456.94,
-        source: "to find a race and sign up and figure",
+        startAt: 447.03,
+        source: "on the UL of each individual list item,",
     },
     
     {
-        startAt: 458.83,
-        source: "out a training plan and dig those shoes",
+        startAt: 449.97,
+        source: "and then you try to figure out, on the click event,",
     },
     
     {
-        startAt: 460.3,
-        source: "out of the back of the closet and then",
+        startAt: 452.41,
+        source: "what is the actual list item that you click on.",
     },
     
     {
-        startAt: 462.06,
-        source: "this is key we treat our priorities as",
+        startAt: 454.664,
+        source: "JAKE: Yeah, so one event listener on the list,",
     },
     
     {
-        startAt: 465.52,
-        source: "the equivalent of that broken water",
+        startAt: 456.58,
+        source: "but you're using it to detect a click on all the list items.",
     },
     
     {
-        startAt: 467.2,
-        source: "heater by putting them into our",
+        startAt: 458.96,
+        source: "That means you can move those list items around, add",
     },
     
     {
-        startAt: 469.3,
-        source: "schedules first and we do this by",
+        startAt: 460.83,
+        source: "and remove them.",
     },
     
     {
-        startAt: 472.66,
-        source: "thinking through our weeks before we are",
+        startAt: 461.34,
+        source: "You don't have to change the list item.",
     },
     
     {
-        startAt: 475.45,
-        source: "in them I find a really good time to do",
+        startAt: 462.51,
+        source: "SURMA: But then the problem becomes",
     },
     
     {
-        startAt: 477.97,
-        source: "this is Friday afternoons Friday",
+        startAt: 463.968,
+        source: "that if your list item has an anchor tag,",
     },
     
     {
-        startAt: 481.09,
-        source: "afternoon is what an economist might",
+        startAt: 466.17,
+        source: "that event or target might be the anchor tag within the list",
     },
     
     {
-        startAt: 482.889,
-        source: "call a low opportunity cost time most of",
+        startAt: 469.1,
+        source: "item.",
     },
     
     {
-        startAt: 487.3,
-        source: "us are not sitting there on Friday",
+        startAt: 469.6,
+        source: "JAKE: It might just be the list itself.",
     },
     
     {
-        startAt: 488.68,
-        source: "afternoons saying I am excited to make",
+        startAt: 470.82,
+        source: "SURMA: Or it might be the list itself.",
     },
     
     {
-        startAt: 490.87,
-        source: "progress toward my personal and",
+        startAt: 471.87,
+        source: "JAKE: Click to list item.",
     },
     
     {
-        startAt: 492.55,
-        source: "professional priorities right now but we",
+        startAt: 473.06,
+        source: "SURMA: And then what you have to do",
     },
     
     {
-        startAt: 496.18,
-        source: "are willing to think about what those",
+        startAt: 474.518,
+        source: "is you have to walk up the tree manually",
+    },
+    
+    {
+        startAt: 476.67,
+        source: "to find what the containing list element is, if it exists.",
+    },
+    
+    {
+        startAt: 479.779,
+        source: "JAKE: Yeah, and I always found this--",
+    },
+    
+    {
+        startAt: 481.32,
+        source: "it's only a little bit of code, but it always",
+    },
+    
+    {
+        startAt: 483.194,
+        source: "felt like a barrier to using event delegation.",
+    },
+    
+    {
+        startAt: 486.21,
+        source: "Whereas, now--",
+    },
+    
+    {
+        startAt: 486.999,
+        source: "SURMA: We've got closest.",
+    },
+    
+    {
+        startAt: 488.04,
+        source: "JAKE: We've got closest, and it's so good, because it",
+    },
+    
+    {
+        startAt: 490.74,
+        source: "doesn't have to be a tag name.",
+    },
+    
+    {
+        startAt: 491.99,
+        source: "It could be a class name.",
+    },
+    
+    {
+        startAt: 492.42,
+        source: "SURMA: I wonder if I did a \"Supercharged\" episode on this?",
+    },
+    
+    {
+        startAt: 494.64,
+        source: "Oh, wait.",
+    },
+    
+    {
+        startAt: 495.33,
+        source: "I did.",
+    },
+    
+    {
+        startAt: 496.14,
+        source: "JAKE: Oh, right.",
+    },
+    
+    {
+        startAt: 496.93,
+        source: "Yeah.",
     },
     
     {
         startAt: 497.53,
-        source: "should be so take a little bit of time",
+        source: "I did worry that maybe there's going",
     },
     
     {
-        startAt: 499.75,
-        source: "Friday afternoon make yourself a three",
+        startAt: 499.25,
+        source: "to be a lot of crossover between what I show now",
     },
     
     {
-        startAt: 501.729,
-        source: "category priority list career",
+        startAt: 501.27,
+        source: "and \"Supercharged.\"",
     },
     
     {
-        startAt: 504.27,
-        source: "relationships self making a three",
+        startAt: 502.62,
+        source: "SURMA: This is just because, as far as I know,",
     },
     
     {
-        startAt: 509.32,
-        source: "category list reminds us that there",
+        startAt: 504.54,
+        source: "closest was inspired by jQuery, and at the jQuery series.",
     },
     
     {
-        startAt: 512.02,
-        source: "should be something in all three",
+        startAt: 508.9,
+        source: "JAKE: There might be some of those coming up as well.",
     },
     
     {
-        startAt: 514.39,
-        source: "categories career we think about",
+        startAt: 512.1,
+        source: "Let's carry on.",
     },
     
     {
-        startAt: 516.01,
-        source: "relationships self not so much but",
+        startAt: 514.62,
+        source: "What is happening here?",
     },
     
     {
-        startAt: 519.37,
-        source: "anyway just a short list two to three",
+        startAt: 516.159,
+        source: "Good luck.",
     },
     
     {
-        startAt: 521.62,
-        source: "items in each then look out over the",
+        startAt: 516.961,
+        source: "SURMA: All right.",
     },
     
     {
-        startAt: 523.809,
-        source: "whole of the next week and see where you",
+        startAt: 517.669,
+        source: "Wait, wait.",
     },
     
     {
-        startAt: 526,
-        source: "can plan them in where you plan them in",
+        startAt: 518.22,
+        source: "So you're replacing just a plus?",
     },
     
     {
-        startAt: 529.12,
-        source: "is up to you and I know this is going to",
+        startAt: 525.17,
+        source: "Anything before the plus will that match pluses?",
     },
     
     {
-        startAt: 531.459,
-        source: "be more complicated for some people than",
+        startAt: 528.38,
+        source: "JAKE: Yes, that would be a literal plus.",
     },
     
     {
-        startAt: 533.2,
-        source: "others I mean",
+        startAt: 530.4,
+        source: "SURMA: Wow, that is confusing, because usually the plus means",
     },
     
     {
-        startAt: 533.95,
-        source: "some people's lives are just harder than",
+        startAt: 533.54,
+        source: "the preceding matcher once or many times repeated.",
     },
     
     {
-        startAt: 536.589,
-        source: "others it is not going to be easy to",
+        startAt: 537.179,
+        source: "JAKE: But if there's no preceding matcher--",
     },
     
     {
-        startAt: 538.779,
-        source: "find time to take that poetry class if",
+        startAt: 538.97,
+        source: "I'm pretty sure that works.",
     },
     
     {
-        startAt: 540.73,
-        source: "you are caring for multiple children on",
+        startAt: 540.23,
+        source: "Some of these I haven't checked thoroughly.",
     },
     
     {
-        startAt: 542.709,
-        source: "your own I get that and I don't want to",
+        startAt: 542.075,
+        source: "I'm pretty sure that works.",
     },
     
     {
-        startAt: 545.709,
-        source: "minimize anyone's struggle but I do",
+        startAt: 543.2,
+        source: "SURMA: I would probably backslash it for clarity",
     },
     
     {
-        startAt: 547.72,
-        source: "think that the numbers I am about to",
+        startAt: 545.72,
+        source: "anyway, unless it then breaks, because right axis.",
     },
     
     {
-        startAt: 549.76,
-        source: "tell you are empowering there are 168",
+        startAt: 548.42,
+        source: "JAKE: Get over the first line.",
     },
     
     {
-        startAt: 554.86,
-        source: "hours in a week 24 times seven is a",
+        startAt: 550.12,
+        source: "SURMA: We are replacing pluses with spaces.",
     },
     
     {
-        startAt: 560.62,
-        source: "hundred sixty eight hours that is a lot",
+        startAt: 552.77,
+        source: "And then we have a result--",
     },
     
     {
-        startAt: 564.79,
-        source: "of time if you are working a full-time",
+        startAt: 556.06,
+        source: "oh, you are totally parsing your alts, aren't you?",
     },
     
     {
-        startAt: 567.579,
-        source: "job so 40 hours a week sleeping eight",
+        startAt: 558.334,
+        source: "JAKE: Yes, I am.",
     },
     
     {
-        startAt: 570.519,
-        source: "hours a night so 56 hours a week",
+        startAt: 559,
+        source: "Well, specifically the query string.",
     },
     
     {
-        startAt: 572.589,
-        source: "that leaves 72 hours for other things",
+        startAt: 562.231,
+        source: "SURMA: The query string.",
     },
     
     {
-        startAt: 575.79,
-        source: "that is a lot of time you say you're",
+        startAt: 563.23,
+        source: "Yeah, because spaces are in code.",
     },
     
     {
-        startAt: 579.399,
-        source: "working 50 hours a week maybe a main job",
+        startAt: 566.12,
+        source: "It's pluses and the individual parameters",
     },
     
     {
-        startAt: 581.529,
-        source: "in a side hustle well that leaves 62",
+        startAt: 568.69,
+        source: "are separated by ampersands, and then you",
     },
     
     {
-        startAt: 583.839,
-        source: "hours for other things you say you're",
+        startAt: 572.38,
+        source: "do the [INAUDIBLE] split.",
+    },
+    
+    {
+        startAt: 573.67,
+        source: "Then, actually, in the end-- oh, you",
+    },
+    
+    {
+        startAt: 575.17,
+        source: "do the URI component decode.",
+    },
+    
+    {
+        startAt: 577.84,
+        source: "That is a lot of work.",
+    },
+    
+    {
+        startAt: 579.17,
+        source: "JAKE: It's a lot of work, and it looks--",
+    },
+    
+    {
+        startAt: 581.25,
+        source: "SURMA: And it's frustrating, because the browser can",
+    },
+    
+    {
+        startAt: 582.88,
+        source: "actually understand it in coding, and doing it",
+    },
+    
+    {
+        startAt: 584.44,
+        source: "yourself is super frustrating.",
     },
     
     {
         startAt: 585.79,
-        source: "working 60 hours well that leaves 52",
+        source: "JAKE: Exactly.",
     },
     
     {
-        startAt: 588.279,
-        source: "hours for other things you say you're",
+        startAt: 586.42,
+        source: "And it's useful to look at the URL to decide stuff.",
     },
     
     {
-        startAt: 590.17,
-        source: "working more than 60 hours well are you",
+        startAt: 589.3,
+        source: "It could either be the current URL,",
     },
     
     {
-        startAt: 591.97,
-        source: "sure",
+        startAt: 590.866,
+        source: "or it could be the URL of a link,",
     },
     
     {
-        startAt: 594.24,
-        source: "there was once a study comparing",
+        startAt: 592.24,
+        source: "or it could be some form data that you're trying to send,",
     },
     
     {
-        startAt: 596.529,
-        source: "people's estimated work weeks with time",
+        startAt: 594.16,
+        source: "because it's the same in coding.",
     },
     
     {
-        startAt: 598.39,
-        source: "diaries found that people claiming 75",
+        startAt: 595.93,
+        source: "And having to do this to figure it out--",
     },
     
     {
-        startAt: 601.029,
-        source: "plus hour work weeks were off by about",
+        startAt: 600.42,
+        source: "SURMA: URL search parents.",
     },
     
     {
-        startAt: 602.92,
-        source: "25 hours you can guess in which",
+        startAt: 604.03,
+        source: "JAKE: It's just so much nicer that we have that now,",
     },
     
     {
-        startAt: 606.97,
-        source: "direction right anyway in 168 hours a",
+        startAt: 606.76,
+        source: "and we have that across all modern--",
     },
     
     {
-        startAt: 611.41,
-        source: "week I think we can find time for what",
+        startAt: 608.33,
+        source: "SURMA: I'm still very annoyed that they",
     },
     
     {
-        startAt: 613.42,
-        source: "matters to you if you want to spend more",
+        startAt: 609.955,
+        source: "didn't add a new property onto the location object.",
     },
     
     {
-        startAt: 615.64,
-        source: "time with your kids you want to study",
+        startAt: 613.489,
+        source: "JAKE: So do you know why?",
     },
     
     {
-        startAt: 617.589,
-        source: "more for a test you're taking you want",
+        startAt: 614.53,
+        source: "So if you do new URL and parse a URL in,",
     },
     
     {
-        startAt: 619.6,
-        source: "to exercise for three hours and",
+        startAt: 618.46,
+        source: "you now have URL.search parameters,",
     },
     
     {
-        startAt: 621.37,
-        source: "volunteer for two you can and that's",
+        startAt: 620.145,
+        source: "which is an instance of this, which you",
     },
     
     {
-        startAt: 623.89,
-        source: "even if you're working way more than",
+        startAt: 621.77,
+        source: "represent in the query string.",
     },
     
     {
-        startAt: 626.11,
-        source: "full time hours so we have plenty of",
+        startAt: 623.5,
+        source: "The problem is the location object",
     },
     
     {
-        startAt: 628.51,
-        source: "time which is great because guess what",
+        startAt: 626.74,
+        source: "is available across windows.",
     },
     
     {
-        startAt: 630.579,
-        source: "we don't even need that much time to do",
+        startAt: 630.386,
+        source: "SURMA: Oh, so if I open a window,",
     },
     
     {
-        startAt: 633.04,
-        source: "amazing things but when most of us have",
+        startAt: 631.76,
+        source: "I can get access to the--",
     },
     
     {
-        startAt: 635.41,
-        source: "bits of time what do we do pull out the",
+        startAt: 632.834,
+        source: "JAKE: Yeah, and even if that window is in another process,",
     },
     
     {
-        startAt: 638.26,
-        source: "phone right start deleting emails or",
+        startAt: 635.25,
+        source: "like an iframe, you still have access to the location object,",
     },
     
     {
-        startAt: 641.949,
-        source: "otherwise we're puttering around the",
+        startAt: 639.23,
+        source: "and this has been the whole problem",
     },
     
     {
-        startAt: 643.839,
-        source: "house or watching TV but small moments",
+        startAt: 640.79,
+        source: "of implementing that, is having this extra object that exists.",
     },
     
     {
-        startAt: 647.199,
-        source: "can have great power you can use your",
+        startAt: 645.765,
+        source: "SURMA: Why is that a problem?",
     },
     
     {
-        startAt: 650.319,
-        source: "bits of time for bits of joy maybe it's",
+        startAt: 647.31,
+        source: "JAKE: Because we have window proxy, and so we would need",
     },
     
     {
-        startAt: 655.6,
-        source: "choosing to read something wonderful on",
+        startAt: 650.6,
+        source: "the equivalent of a search parameter's proxy,",
     },
     
     {
-        startAt: 657.459,
-        source: "the bus on the way to work I know when I",
+        startAt: 653.35,
+        source: "because of things like [INAUDIBLE] and all",
     },
     
     {
-        startAt: 659.889,
-        source: "had a job that required two bus rides in",
+        startAt: 655.1,
+        source: "of that sort of stuff, it's not referencing",
     },
     
     {
-        startAt: 661.959,
-        source: "a subway ride every morning I used to go",
+        startAt: 656.48,
+        source: "exactly the same object.",
     },
     
     {
-        startAt: 663.61,
-        source: "to the library on weekends to get stuff",
+        startAt: 657.53,
+        source: "SURMA: I would be fine if we just defined",
     },
     
     {
-        startAt: 665.199,
-        source: "to read made the whole experience all",
+        startAt: 658.55,
+        source: "a [INAUDIBLE] function that just gives me a new instance.",
     },
     
     {
-        startAt: 667.3,
-        source: "just almost enjoyable breaks at work can",
+        startAt: 661.4,
+        source: "JAKE: In the same realm or something.",
     },
     
     {
-        startAt: 672.79,
-        source: "be used for meditating or praying if",
+        startAt: 664.01,
+        source: "SURMA: Every time I do new URL search,",
     },
     
     {
-        startAt: 674.94,
-        source: "family dinner is out because of your",
+        startAt: 666.09,
+        source: "new URL and then location.string or something--",
     },
     
     {
-        startAt: 677.2,
-        source: "crazy work schedule maybe family",
+        startAt: 671.06,
+        source: "it's a small [INAUDIBLE] compared",
     },
     
     {
-        startAt: 679.149,
-        source: "breakfast could be a good substitute",
+        startAt: 672.904,
+        source: "to what we had to do before.",
     },
     
     {
-        startAt: 681.029,
-        source: "it's about looking at the whole of one's",
+        startAt: 674.07,
+        source: "JAKE: Agreed.",
     },
     
     {
-        startAt: 683.8,
-        source: "time and seeing where the good stuff can",
+        startAt: 674.6,
+        source: "It's work-aroundable, but it would be nice if it was there.",
     },
     
     {
-        startAt: 686.589,
-        source: "go I truly believe this there is time",
+        startAt: 677.058,
+        source: "But yeah, this [INAUDIBLE] it does",
     },
     
     {
-        startAt: 694.32,
-        source: "even if we are busy we have time for",
+        startAt: 679.52,
+        source: "the encoding, the decoding.",
     },
     
     {
-        startAt: 697.75,
-        source: "what matters and when we focus on what",
+        startAt: 681.47,
+        source: "And it's just there, and it's brilliant.",
     },
     
     {
-        startAt: 700.899,
-        source: "matters we can build the lives we want",
+        startAt: 684.02,
+        source: "Excellent.",
     },
     
     {
-        startAt: 703.45,
-        source: "in the time we've got thank you",
+        startAt: 686.195,
+        source: "SURMA: Ah, FileReader.",
     },
     
     {
-        startAt: 707.95,
-        source: "[Applause]",
+        startAt: 689.23,
+        source: "I'm not sure about FileReader.",
+    },
+    
+    {
+        startAt: 691.45,
+        source: "So it was supposed to help you read Blobs and files that",
+    },
+    
+    {
+        startAt: 696.85,
+        source: "are given from file picker and these kind of things.",
+    },
+    
+    {
+        startAt: 699.31,
+        source: "And it's this super non promise based",
+    },
+    
+    {
+        startAt: 701.774,
+        source: "API, which are always great.",
+    },
+    
+    {
+        startAt: 702.94,
+        source: "It's like [INAUDIBLE] but for files, in a way.",
+    },
+    
+    {
+        startAt: 706.45,
+        source: "Is the support super flaky across",
+    },
+    
+    {
+        startAt: 709.471,
+        source: "browsers or is this actually--",
+    },
+    
+    {
+        startAt: 710.72,
+        source: "JAKE: No, this is well-supported.",
+    },
+    
+    {
+        startAt: 712.39,
+        source: "As you say, it predates promises.",
+    },
+    
+    {
+        startAt: 715.15,
+        source: "It will take a Blob or a file, because file",
+    },
+    
+    {
+        startAt: 717.049,
+        source: "inherits from Blob.",
+    },
+    
+    {
+        startAt: 717.84,
+        source: "And if you wanted to take that--",
+    },
+    
+    {
+        startAt: 719.89,
+        source: "because Blob, you don't get access to the bytes.",
+    },
+    
+    {
+        startAt: 722.172,
+        source: "If you want access to the bytes, as",
+    },
+    
+    {
+        startAt: 723.63,
+        source: "like text or an array buffer, this",
+    },
+    
+    {
+        startAt: 725.89,
+        source: "is the mess you would have to deal with.",
+    },
+    
+    {
+        startAt: 729.82,
+        source: "Nowadays [INAUDIBLE].",
+    },
+    
+    {
+        startAt: 733.01,
+        source: "SURMA: [INAUDIBLE] that you recently tweaked it, I think,",
+    },
+    
+    {
+        startAt: 736.87,
+        source: "and that's where I learned it.",
+    },
+    
+    {
+        startAt: 738.64,
+        source: "Yeah, I never thought about abusing response in that way.",
+    },
+    
+    {
+        startAt: 742.39,
+        source: "I don't think it's actually abuse, because--",
+    },
+    
+    {
+        startAt: 744.25,
+        source: "JAKE: It's creating a response when you don't really",
+    },
+    
+    {
+        startAt: 745.48,
+        source: "need to just because it has these methods on there.",
+    },
+    
+    {
+        startAt: 747.45,
+        source: "SURMA: But it's suddenly promise based, [INAUDIBLE]",
+    },
+    
+    {
+        startAt: 748.84,
+        source: "because actually, you know what's going on,",
+    },
+    
+    {
+        startAt: 750.82,
+        source: "and I think that's a big difference.",
+    },
+    
+    {
+        startAt: 752,
+        source: "JAKE: And that's one of the things, when we designed",
+    },
+    
+    {
+        startAt: 754.166,
+        source: "the response API, we wanted it to be very easy to get",
+    },
+    
+    {
+        startAt: 757.467,
+        source: "these other formats out like text or array buffer,",
+    },
+    
+    {
+        startAt: 759.55,
+        source: "those sort of things.",
+    },
+    
+    {
+        startAt: 760.66,
+        source: "Nice promise based API.",
+    },
+    
+    {
+        startAt: 761.987,
+        source: "Obviously, async functions are a thing",
+    },
+    
+    {
+        startAt: 763.57,
+        source: "we didn't used to have that I take for granted now.",
+    },
+    
+    {
+        startAt: 766.6,
+        source: "It all made browsers so much easier.",
+    },
+    
+    {
+        startAt: 770.06,
+        source: "So the last one.",
+    },
+    
+    {
+        startAt: 771.76,
+        source: "SURMA: Wait, what?",
+    },
+    
+    {
+        startAt: 772.554,
+        source: "JAKE: If you could at least get a flavor",
+    },
+    
+    {
+        startAt: 774.22,
+        source: "for what's going on here.",
+    },
+    
+    {
+        startAt: 776.48,
+        source: "SURMA: We are creating a styles object.",
+    },
+    
+    {
+        startAt: 781.39,
+        source: "We are creating a random animation.",
+    },
+    
+    {
+        startAt: 788.12,
+        source: "Generating the animation [INAUDIBLE] wide translation",
+    },
+    
+    {
+        startAt: 790.955,
+        source: "and we add the new styles, then we add that new animation",
+    },
+    
+    {
+        startAt: 795.38,
+        source: "to an object, wait for--",
+    },
+    
+    {
+        startAt: 798.232,
+        source: "JAKE: Do you know what?",
+    },
+    
+    {
+        startAt: 799.19,
+        source: "I'll save you time.",
+    },
+    
+    {
+        startAt: 800.822,
+        source: "This is if you're wanting to create",
+    },
+    
+    {
+        startAt: 802.28,
+        source: "a programmatic animation.",
+    },
+    
+    {
+        startAt: 805.244,
+        source: "SURMA: I see.",
+    },
+    
+    {
+        startAt: 806.54,
+        source: "Because back in the day you only had CSS.",
+    },
+    
+    {
+        startAt: 809.485,
+        source: "JAKE: Yes, so if I wanted to animate from something",
+    },
+    
+    {
+        startAt: 811.61,
+        source: "to something else, this is the kind of thing I have to do.",
+    },
+    
+    {
+        startAt: 814.4,
+        source: "I have to create the key frames.",
+    },
+    
+    {
+        startAt: 815.88,
+        source: "SURMA: AD hoc the key frame animation,",
+    },
+    
+    {
+        startAt: 817.463,
+        source: "add it as a styles tag.",
+    },
+    
+    {
+        startAt: 818.992,
+        source: "JAKE: And this is because an animation could end",
+    },
+    
+    {
+        startAt: 821.06,
+        source: "or it could cancel, so I need to listen for both to know",
+    },
+    
+    {
+        startAt: 823.82,
+        source: "when the animation is done.",
+    },
+    
+    {
+        startAt: 825.38,
+        source: "And turn that into a promise.",
+    },
+    
+    {
+        startAt: 831.86,
+        source: "Ta-da.",
+    },
+    
+    {
+        startAt: 832.36,
+        source: "SURMA: Web animation's API.",
+    },
+    
+    {
+        startAt: 834.16,
+        source: "It's finally coming to a point where it",
+    },
+    
+    {
+        startAt: 836.05,
+        source: "becomes usable across browsers.",
+    },
+    
+    {
+        startAt: 837.76,
+        source: "JAKE: Yeah, and this is themed differently",
+    },
+    
+    {
+        startAt: 840.22,
+        source: "from the other examples because we still don't have this.",
+    },
+    
+    {
+        startAt: 845.11,
+        source: "SURMA: We have it in Chrome, at least a subset.",
+    },
+    
+    {
+        startAt: 847.452,
+        source: "JAKE: We don't have the finished promise.",
+    },
+    
+    {
+        startAt: 849.16,
+        source: "SURMA: No, we don't.",
+    },
+    
+    {
+        startAt: 850.15,
+        source: "We sold out.",
+    },
+    
+    {
+        startAt: 850.82,
+        source: "That's true.",
+    },
+    
+    {
+        startAt: 851.32,
+        source: "JAKE: And do you know whose fault that is?",
+    },
+    
+    {
+        startAt: 853.07,
+        source: "SURMA: My mom's?",
+    },
+    
+    {
+        startAt: 856.07,
+        source: "JAKE: By extension, yes.",
+    },
+    
+    {
+        startAt: 857.99,
+        source: "It's my fault, because at the time that he designed this,",
+    },
+    
+    {
+        startAt: 864.561,
+        source: "we hadn't decided what to do with cancellable promises",
+    },
+    
+    {
+        startAt: 866.81,
+        source: "at the time.",
+    },
+    
+    {
+        startAt: 867.97,
+        source: "And because finished is a promise that may cancel,",
+    },
+    
+    {
+        startAt: 873.564,
+        source: "I put the brakes on, and said we can't ship this yet, because it",
+    },
+    
+    {
+        startAt: 876.23,
+        source: "might turn out to be--",
+    },
+    
+    {
+        startAt: 877.25,
+        source: "SURMA: Ladies and gentlemen, please tweet at Jake.",
+    },
+    
+    {
+        startAt: 880.04,
+        source: "JAKE: I'm sorry.",
+    },
+    
+    {
+        startAt: 880.88,
+        source: "And do you know what's worse?",
+    },
+    
+    {
+        startAt: 882.11,
+        source: "The thing they were doing is what we ended up doing.",
+    },
+    
+    {
+        startAt: 885.5,
+        source: "So if we shipped it, it would have been fine.",
+    },
+    
+    {
+        startAt: 889.16,
+        source: "I used to do a JavaScript library for the BBC,",
+    },
+    
+    {
+        startAt: 892.94,
+        source: "and we were having to target things like Safari 1.3,",
+    },
+    
+    {
+        startAt: 897.68,
+        source: "and this is the sort of stuff.",
+    },
+    
+    {
+        startAt: 899.275,
+        source: "All this stuff I'm showing you, I",
+    },
+    
+    {
+        startAt: 900.65,
+        source: "would have killed for this stuff back then.",
+    },
+    
+    {
+        startAt: 902.441,
+        source: "And it is nice to see that--",
+    },
+    
+    {
+        startAt: 904.889,
+        source: "we look at the future cool stuff that might land,",
+    },
+    
+    {
+        startAt: 906.93,
+        source: "and it's like, oh, that looks interesting.",
+    },
+    
+    {
+        startAt: 908.35,
+        source: "And it's nice to stop and look at that things have got better.",
+    },
+    
+    {
+        startAt: 910.934,
+        source: "SURMA: We've got nice things now.",
+    },
+    
+    {
+        startAt: 912.308,
+        source: "JAKE: Things have got better.",
+    },
+    
+    {
+        startAt: 913.56,
+        source: "I tend to, on stage, I lock my arms in.",
+    },
+    
+    {
+        startAt: 918.14,
+        source: "I walk around like a camp zombie.",
+    },
+    
+    {
+        startAt: 920.09,
+        source: "SURMA: Is that a sweat fear?",
+    },
+    
+    {
+        startAt: 921.71,
+        source: "JAKE: I think it might be that.",
+    },
+    
+    {
+        startAt: 924.29,
+        source: "So I'm a talking--",
+    },
+    
+    {
+        startAt: 926.469,
+        source: "and here's how this is working.",
+    },
+    
+    {
+        startAt: 927.76,
+        source: "SURMA: T rex mode engaged.",
+    },
+    
+    {
+        startAt: 929.81,
+        source: "JAKE: Typing on my keyboard.",
+    },
+    
+    {
+        startAt: 931.19,
+        source: "Driving my car.",
     },
     
 ];
